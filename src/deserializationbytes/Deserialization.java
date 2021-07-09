@@ -1,4 +1,4 @@
-package deserialization;
+package deserializationbytes;
 
 import javax.management.ObjectName;
 import java.io.FileInputStream;
@@ -12,9 +12,10 @@ import java.io.ObjectInputStream;
  */
 public class Deserialization {
     public  static void main(String [] args){
+        User user = null ;
 
         try {
-            User user = null ;
+
             FileInputStream fileIn = new FileInputStream(
                     "serial.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);

@@ -1,4 +1,4 @@
-package serialization;
+package serializationbytes;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
@@ -19,8 +19,10 @@ import java.io.ObjectOutputStream;
  * 7. out.close();
  * 8. fileOut.close();
  */
+
 public class Serialization {
     public static  void main(String [] args){
+
         Users user = new Users();
         user.name = "tucker";
         user.password = " @04";
@@ -38,6 +40,11 @@ public class Serialization {
         }catch(Exception ex){
             System.out.println("file not save");
         }
+
+        Users user2 = new Users();
+        user2.name = "amosi";
+        user2. password = "@jane";
+
 
     }
 }
